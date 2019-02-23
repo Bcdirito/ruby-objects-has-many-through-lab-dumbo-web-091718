@@ -20,6 +20,8 @@ class Genre
   end
   
   def artists
-    binding.pry
+    Artist.all.select do |a|
+      a.songs.select do {|s| binding.pry}
+    end
   end
 end
