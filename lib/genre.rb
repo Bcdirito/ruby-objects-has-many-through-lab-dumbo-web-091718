@@ -18,4 +18,8 @@ class Genre
     end
     songs
   end
+  
+  def artists
+    binding.pry
+  end
 end
