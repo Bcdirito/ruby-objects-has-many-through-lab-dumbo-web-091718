@@ -8,6 +8,10 @@ class Genre
     @@all << self
   end
   
+  def self.all
+    @@all
+  end
+  
   def songs
     songs = Song.all.select do |song|
       song.genre.name == self.name
