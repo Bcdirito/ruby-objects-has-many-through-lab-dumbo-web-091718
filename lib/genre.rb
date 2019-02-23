@@ -17,7 +17,6 @@ class Genre
   end
   
   def artists
-    songs = Song.all.select {|song| song.genre.name == self.name}
-    artists = songs.select {|s| s.artist}
+    binding.pry
   end
 end
