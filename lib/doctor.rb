@@ -18,4 +18,8 @@ class Doctor
     @appointments << new_app
     new_app
   end
+  
+  def patients
+    @appointments.select do {|app| app.patient}
+  end
 end
