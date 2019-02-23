@@ -17,6 +17,6 @@ class Genre
   end
   
   def artists
-    binding.pry
+    self.songs.select {|song| song.artist}
   end
 end
