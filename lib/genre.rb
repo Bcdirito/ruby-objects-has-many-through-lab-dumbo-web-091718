@@ -17,10 +17,6 @@ class Genre
   end
   
   def artists
-    self.songs.select do |song|
-      if song.genre.name == self.name
-        return song.artist
-      end
-    end
+    self.songs.map {|song| song.artist}
   end
 end
