@@ -9,7 +9,7 @@ class Genre
   end
   
   def songs
-    songs = Song.all.map do |song|
+    songs = Song.all.select do |song|
       song.genre.name == self.name
     end
     songs
