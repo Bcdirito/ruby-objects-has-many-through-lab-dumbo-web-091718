@@ -21,7 +21,7 @@ class Genre
   
   def artists
     Artist.all.select do |a|
-      a.songs.select do {|s| binding.pry}
+      a.songs.select {|s| binding.pry}
     end
   end
 end
