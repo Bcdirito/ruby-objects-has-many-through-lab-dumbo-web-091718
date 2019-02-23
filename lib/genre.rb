@@ -17,6 +17,6 @@ class Genre
   end
   
   def artists
-    self.songs.select {|song| if song.genre.name == self.name return song.artist}
+    self.songs.select {|song| if song.genre.name == self.name song.artist}
   end
 end
