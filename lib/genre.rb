@@ -10,7 +10,7 @@ class Genre
   
   def songs
     songs = Song.all.map do |song|
-      binding.pry
+      song.genre.name == self.name
     end
     songs
   end
