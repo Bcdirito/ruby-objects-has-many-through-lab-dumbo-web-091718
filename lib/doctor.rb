@@ -20,6 +20,6 @@ class Doctor
   end
   
   def patients
-    @appointments.select do {|app| app.patient}
+    @appointments.select {|app| app.patient}
   end
 end
