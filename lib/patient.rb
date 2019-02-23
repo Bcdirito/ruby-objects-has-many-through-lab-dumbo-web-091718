@@ -19,4 +19,8 @@ class Patient
     @appointments << new_app
     new_app
   end
+  
+  def doctors
+    @appointments.map {|app| app.doctor}
+  end
 end
